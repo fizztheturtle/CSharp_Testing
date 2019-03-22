@@ -1,12 +1,17 @@
 ﻿using System;
-
 namespace CSharp_Testing_
 {
     class Program
     {
-        static void Main(string[] args)
+
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var instance = new Numbers_Class();
+            Numbers_Class.fibbonaci_math();
+
+            Console.ReadLine();
         }
+
+
     }
 }
