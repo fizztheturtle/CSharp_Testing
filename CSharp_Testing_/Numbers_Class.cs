@@ -7,27 +7,21 @@ namespace CSharp_Testing_
 
     public class Numbers_Class
     {
-        public static void quick_maths()
+        public static void QuickMaths()
         {
             int sum = 0;
             for (int counter2 = 1; counter2 < 20; counter2++)
             {
-
                 if (counter2 % 3 == 0)
                 {
                     sum += counter2;
                     Console.WriteLine($"Hello World! this number {counter2}, can be divided by 3!");
                 }
-
-
             }
             Console.WriteLine($"{sum}, is the sum");
-
-
-
         }
 
-        public static void fibbonaci_math()
+        public static void Fibbonaci_Math()
         {
             int n1 = 0, n2 = 1, n3, i, number;
             Console.Write("Enter the number of elements: ");

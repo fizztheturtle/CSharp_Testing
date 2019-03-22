@@ -7,7 +7,7 @@ namespace CSharp_Testing_
         public static void Main(string[] args)
         {
             var instance = new Numbers_Class();
-            Numbers_Class.fibbonaci_math();
+            Numbers_Class.Fibbonaci_Math();
 
             Console.ReadLine();
         }
