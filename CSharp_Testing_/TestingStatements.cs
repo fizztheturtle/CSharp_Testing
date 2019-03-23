@@ -64,7 +64,10 @@ namespace CSharp_Testing_
             Console.WriteLine();
         }
 
-
+        // Span<T> is a representation of contiguous region of arbitary memory.
+        // Used to hold elements of an array or a portion of an array.
+        // it differs from an array since it is able to point to managed memory,
+        // native memory, or memory managed on the stack.
         public static void Spanesting_0()
         {
             // Create a span over an array.
@@ -81,7 +84,8 @@ namespace CSharp_Testing_
 
             Console.WriteLine($"The sum is {arraySum}");
         }
-
+        // The following example creates a slice of the middle
+        // five elements of a 10-element integer array. 
         public static void Spanesting_1()
         {
             var array = new int[] { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
@@ -95,6 +99,8 @@ namespace CSharp_Testing_
             Console.WriteLine();
 
         }
+
+        //stackalloc keyword is used to allocate 100 bytes of memory on the stack
         public static void Spanesting_2()
         {
             byte data = 0;
@@ -108,6 +114,8 @@ namespace CSharp_Testing_
 
             Console.WriteLine($"The sum is {stackSum}");
         }
+
+        // https://docs.microsoft.com/en-us/dotnet/api/system.span-1?view=netcore-2.2#spant-and-slices
         public static void Spanesting_3()
         {
             string contentLength = "Content-Length: 132";
