@@ -6,8 +6,10 @@ namespace CSharp_Testing_
 
         public static void Main(string[] args)
         {
-            var instance = new Numbers_Class();
-            Numbers_Class.Fibbonaci_Math();
+            //var numClass = new Numbers_Class();
+            
+            //Numbers_Class.Fibbonaci_Math();
+            TestingStatements.Switch_Test();
 
             Console.ReadLine();
         }
