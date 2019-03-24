@@ -6,10 +6,18 @@ namespace CSharp_Testing_
 
         public static void Main(string[] args)
         {
-            var DelegateTestingClass = new DelegateTesting();
+            TestingDelegates();
+            Console.ReadLine();
+        }
 
-            //Numbers_Class.Fibbonaci_Math();
+        public static void testingNumbers()
+        {
+            Numbers_Class.Fibbonaci_Math();
+            Numbers_Class.QuickMaths();
+        }
 
+        public static void TestingStatements()
+        {
             //TestingStatements.Switch_Test();
             //TestingStatements.ListTest();
             //TestingStatements.IterateSpanExample();
@@ -17,8 +25,14 @@ namespace CSharp_Testing_
             //TestingStatements.Spanesting_1();
             //TestingStatements.Spanesting_2();
             //TestingStatements.Spanesting_3();
+
+        }
+
+        public static void TestingDelegates()
+        {
+            var DelegateTestingClass = new DelegateTesting();
+
             // Instantiate the delegate.
-          
             DelegateTesting.Del handler = DelegateTesting.DelegateMethod;
 
             // Call the delegate.
@@ -31,7 +45,6 @@ namespace CSharp_Testing_
             string input1 = Console.ReadLine();
             int inputInt1 = Int32.Parse(input1);
             DelegateTestingClass.MethodWithCallback(inputInt0, inputInt1, handler);
-            Console.ReadLine();
         }
 
 
