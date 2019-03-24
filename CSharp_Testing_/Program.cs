@@ -6,17 +6,17 @@ namespace CSharp_Testing_
 
         public static void Main(string[] args)
         {
-            TestingDelegates();
+            TestDelegates();
             Console.ReadLine();
         }
 
-        public static void testingNumbers()
+        public static void testNumbers()
         {
             Numbers_Class.Fibbonaci_Math();
             Numbers_Class.QuickMaths();
         }
 
-        public static void TestingStatements()
+        public static void TestStatements()
         {
             //TestingStatements.Switch_Test();
             //TestingStatements.ListTest();
@@ -28,7 +28,7 @@ namespace CSharp_Testing_
 
         }
 
-        public static void TestingDelegates()
+        public static void TestDelegates()
         {
             var DelegateTestingClass = new DelegateTesting();
 
