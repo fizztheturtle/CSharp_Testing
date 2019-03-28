@@ -6,8 +6,21 @@ namespace CSharp_Testing_
 
         public static void Main(string[] args)
         {
-            TestDelegates();
+            //TestDelegates();
+            TestStatements();
+            //TestingClassMethod();
+
             Console.ReadLine();
+        }
+
+        private static void TestingClassMethod()
+        {
+            TestingClass testClass = new TestingClass();
+
+            testClass.Number = 27;
+
+            int result = testClass.Multiply(20);
+            Console.WriteLine($"The result is {result}.");
         }
 
         public static void testNumbers()
@@ -18,7 +31,7 @@ namespace CSharp_Testing_
 
         public static void TestStatements()
         {
-            //TestingStatements.Switch_Test();
+            TestingStatements.Switch_Test();
             //TestingStatements.ListTest();
             //TestingStatements.IterateSpanExample();
             //TestingStatements.Spanesting_0();
